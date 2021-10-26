@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\assel\Desktop\Cours\SAE 101\Semaine1\exercice3\defi3.gpr</vfs_file>
+    <file_marker column=" 20" line=" 20" >
+      <vfs_project>C:\Users\assel\Desktop\Cours\SAE 101\Semaine1\exercice3\defi3.gpr</vfs_project>
+      <vfs_file>C:\Users\assel\Desktop\Cours\SAE 101\Semaine1\exercice3\src\verifiercecode.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 20" line=" 2" >
+      <vfs_project>C:\Users\assel\Desktop\Cours\SAE 101\Semaine1\exercice3\defi3.gpr</vfs_project>
+      <vfs_file>C:\Users\assel\Desktop\Cours\SAE 101\Semaine1\exercice3\src\implementation.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
