@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__gestionusagers.o
+[PROJECT FILES]
+C:\Users\assel\Desktop\Cours\SAE 101\Semaine2\projetsae.gpr
+20211026135518 eddddf313efcebe8201b6171670b2f01
+[BOUND OBJECT FILES]
+C:\Users\assel\Desktop\Cours\SAE 101\Semaine2\obj\Type_Usager.o
+C:\Users\assel\Desktop\Cours\SAE 101\Semaine2\obj\gestionusagers.o
+[GENERATED SOURCE FILES]
+b__gestionusagers.ads
+b__gestionusagers.adb
+b__gestionusagers.ali
+[RESULTING OPTIONS]
+-LC:\Users\assel\Desktop\Cours\SAE 101\Semaine2\obj\
+-LC:\Users\assel\Desktop\Cours\SAE 101\Semaine2\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

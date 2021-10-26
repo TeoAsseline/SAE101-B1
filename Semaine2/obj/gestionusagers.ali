@@ -1,0 +1,90 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U gestionusagers%b	gestionusagers.adb	b5267a9d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W type_usager%s		type_usager.adb		type_usager.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D gestionusagers.adb	20211026160256 03c9ebed gestionusagers%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D type_usager.ads	20211026154930 ee50cdb9 type_usager%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [gestionusagers standard 5 11 none]
+G r c none [gestionusagers standard 5 11 none] [getusager type_usager 17 14 none]
+G r c none [gestionusagers standard 5 11 none] [putusager type_usager 20 14 none]
+G r c none [gestionusagers standard 5 11 none] [getage type_usager 23 13 none]
+G r c none [gestionusagers standard 5 11 none] [affectation type_usager 26 14 none]
+G r c none [gestionusagers standard 5 11 none] [egalite type_usager 29 13 none]
+G r c none [gestionusagers standard 5 11 none] [identitycompare type_usager 32 13 none]
+G r c none [gestionusagers standard 5 11 none] [comparaison type_usager 35 13 none]
+G r c none [gestionusagers standard 5 11 none] [levelup type_usager 38 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|2r6 2r23 3r6 3r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 13|3w10 3r35
+X 10 a-textio.ads
+58K13*Text_IO 725e16 13|2w10 2r27
+262U14*New_Line 13|14s4 27s4 41s4 49s4 58s4 85s4
+506U14*Put_Line 13|21s7 23s7 35s7 37s7 43s9 45s7 51s7 53s7 60s7 62s7 68s7
+. 70s7 77s7 79s7 87s7 89s7
+X 13 gestionusagers.adb
+5U11*Gestionusagers 5b11 93l5 93t19
+X 31 type_usager.ads
+2K9*Type_Usager 13|1w6 1r23 31|40e16
+6i7*Num_ID{integer} 13|15m12 28m15 65m12 73m12
+7a7*Username{string} 13|16m12 29m15
+8i7*BornYear{integer} 13|17m12 30m15
+9i7*Level{integer} 13|18m12 31m15 86r15
+12r4*usager1{5R9} 13|10m14 11r14 15m4 16m4 17m4 18m4 20r14 33r16 42r15 50r23
+. 59r19 65m4 67r19 73m4 76r19 84m13 84r13 86r7
+13r4*usager2{5R9} 13|33m25 34r7 42r24 50r32 59r28 67r28 76r28
+14r4*usagertest{5R9} 13|28m4 29m4 30m4 31m4 34r17
+17U14*getUsager 13|10s4
+20U14*putUsager 13|11s4
+23V13*getAge{integer} 13|20s7
+26U14*Affectation 13|33s4
+29V13*Egalite{boolean} 13|42s7
+32V13*IdentityCompare{boolean} 13|50s7
+35V13*Comparaison{boolean} 13|59s7 67s7 76s7
+38U14*LevelUp 13|84s4
+
