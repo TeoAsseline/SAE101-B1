@@ -9,7 +9,7 @@ RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U type_usager%b		type_usager.adb		bbcc574a NE OO PK
+U type_usager%b		type_usager.adb		aeecc5a6 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -17,7 +17,7 @@ Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W type_usager%s		type_usager.adb		type_usager.ali
 
-U type_usager%s		type_usager.ads		ee50cdb9 EE NE OO PK
+U type_usager%s		type_usager.ads		a6aa4893 EE NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
@@ -49,64 +49,97 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D type_usager.ads	20211026154930 ee50cdb9 type_usager%s
-D type_usager.adb	20211026154930 e3730b83 type_usager%b
+D type_usager.ads	20211103150416 a6aa4893 type_usager%s
+D type_usager.adb	20211103211026 f653996f type_usager%b
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z s s [type_usagerIP type_usager 5 9 none]
-G c Z s b [getusager type_usager 17 14 none]
-G c Z s b [putusager type_usager 20 14 none]
-G c Z s b [getage type_usager 23 13 none]
-G c Z s b [affectation type_usager 26 14 none]
-G c Z s b [egalite type_usager 29 13 none]
-G c Z s b [identitycompare type_usager 32 13 none]
-G c Z s b [comparaison type_usager 35 13 none]
-G c Z s b [levelup type_usager 38 14 none]
+G c Z s s [type_usagerIP type_usager 6 9 none]
+G c Z s b [getusager type_usager 21 14 none]
+G c Z s b [putusager type_usager 24 14 none]
+G c Z s b [getage type_usager 27 13 none]
+G c Z s b [affectation type_usager 30 14 none]
+G c Z s b [egalite type_usager 33 13 none]
+G c Z s b [identitycompare type_usager 36 13 none]
+G c Z s b [comparaison type_usager 39 13 none]
+G c Z s b [levelup type_usager 42 14 none]
+G c Z s b [testage type_usager 45 14 none]
+G c Z s b [testaffectation type_usager 48 14 none]
+G c Z s b [testegalite type_usager 51 14 none]
+G c Z s b [testcomparaison type_usager 54 14 none]
+G c Z s b [testlevel type_usager 57 14 none]
+G c Z b b [testidentity type_usager 168 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 31|3r6 3r23 4r6 4r31
 X 3 a-inteio.ads
 18K13*Integer_Text_IO[11|46] 31|4w10 4r35
 X 10 a-textio.ads
 58K13*Text_IO 725e16 31|3w10 3r27
-262U14*New_Line 31|15s22 17s31 19s24 30s7 32s22 34s29 36s24
+262U14*New_Line 31|30s7 32s22 36s24 122s7 138s7 158s7 172s7 189s7 198s7 207s7
+. 221s7 223s7 224s7 230s7
 452U14*Get 31|17s7
-463U14*Put 31|101s8
-506U14*Put_Line 31|14s7 16s7 18s7 20s7 31s7 33s7 34s7 35s7 37s7 102s8
+463U14*Put 31|111s8 112s8
+506U14*Put_Line 31|14s7 16s7 18s7 20s7 31s7 33s7 34s7 35s7 37s7 124s10 126s10
+. 146s10 148s10 160s10 162s10 174s10 176s10 191s10 193s10 200s10 202s10 209s10
+. 211s10 226s10 228s10
 X 11 a-tiinio.ads
 59U14*Get 31|15s7[3|18] 19s7[3|18] 21s7[3|18]
-80U14*Put 31|32s7[3|18] 36s7[3|18] 38s7[3|18] 103s8[3|18]
+80U14*Put 31|32s7[3|18] 36s7[3|18] 38s7[3|18] 113s8[3|18]
 X 30 type_usager.ads
-2K9*Type_Usager 40l5 40e16 31|2w6 7b14 106l5 106t16
-5R9*Type_Usager 10e19 12r13 13r13 14r16 17r33 20r32 23r28 26r34 26r56 29r30
-. 29r52 32r38 32r60 35r34 35r56 38r34 31|10r33 26r32 43r28 52r34 52r56 64r30
-. 64r52 75r38 75r60 86r34 86r56 97r34
-6i7*Num_ID{integer} 31|15m13 32r13 56m9 56r21 78r41 78r53 89r13 89r25
-7a7*Username{string} 31|17m13 34r18 57m9 57r23 67r14 67r26
-8i7*BornYear{integer} 31|19m13 36r13 46r22 58m9 58r23 67r44 67r56
-9i7*Level{integer} 31|21m13 38r13 59m9 59r20 67r74 67r83 100m10 100r21 103r14
-12r4*usager1{5R9}
-13r4*usager2{5R9}
-14r4*usagertest{5R9}
-17U14*getUsager 17<25 31|10b14 23l8 23t17
-17r25 u{5R9} 31|10b25 15m11 15r11 17m11 17r11 19m11 19r11 21m11 21r11
-20U14*putUsager 20>25 31|26b14 40l8 40t17
-20r25 u{5R9} 31|26b25 32r11 34r16 36r11 38r11
-23V13*getAge{integer} 23>21 31|43b13 49l8 49t14
-23r21 u{5R9} 31|43b21 46r20
-26U14*Affectation 26>27 26<48 31|52b14 61l8 61t19
-26r27 u{5R9} 31|52b27 56r19 57r21 58r21 59r18
-26r48 e{5R9} 31|52b48 56m7 57m7 58m7 59m7
-29V13*Egalite{boolean} 29>22 29>44 31|64b13 72l8 72t15 78s11
-29r22 u1{5R9} 31|64b22 67r11 67r41 67r71
-29r44 u2{5R9} 31|64b44 67r23 67r53 67r80
-32V13*IdentityCompare{boolean} 32>30 32>52 31|75b13 83l8 83t23
-32r30 u1{5R9} 31|75b30 78r19 78r38
-32r52 u2{5R9} 31|75b52 78r22 78r50
-35V13*Comparaison{boolean} 35>26 35>48 31|86b13 94l8 94t19
-35r26 u1{5R9} 31|86b26 89r10
-35r48 u2{5R9} 31|86b48 89r22
-38U14*LevelUp 38=23 31|97b14 104l8 104t15
-38r23 u{5R9} 31|97b23 100m8 100r19 103r12
+3K9*Type_Usager 59l5 59e16 31|2w6 6b14 234l5 234t16
+6R9*Type_Usager 13e19 15r12 16r13 17r13 18r16 21r33 24r32 27r28 30r34 30r56
+. 33r30 33r52 36r38 36r60 39r34 39r56 42r34 45r29 48r37 48r56 51r33 51r52
+. 54r37 54r56 57r35 31|9r33 26r32 43r28 55r34 55r56 67r30 67r52 80r38 80r60
+. 93r34 93r56 106r34 118r29 132r37 132r58 134r19 154r33 154r52 168r34 168r53
+. 183r37 183r56 185r9 217r35
+8i7*Num_ID{integer} 31|15m13 32r13 59m9 59r21 84r41 84r53 97r13 97r25 139m18
+. 196m9 205m9
+9a7*Username{string} 31|17m13 34r18 60m9 60r23 71r14 71r26 140m18
+10i7*BornYear{integer} 31|19m13 36r13 49r22 61m9 61r23 71r44 71r56 141m18
+11i7*Level{integer} 31|21m13 38r13 62m9 62r20 71r74 71r83 110m10 110r21 113r14
+. 142m18 225r13
+15r4*usager{6R9}
+16r4*usager1{6R9}
+17r4*usager2{6R9}
+18r4*usagertest{6R9}
+21U14*getUsager 21<25 31|9b14 23l8 23t17
+21r25 u{6R9} 31|9b25 15m11 15r11 17m11 17r11 19m11 19r11 21m11 21r11
+24U14*putUsager 24>25 31|26b14 40l8 40t17
+24r25 u{6R9} 31|26b25 32r11 34r16 36r11 38r11
+27V13*getAge{integer} 27>21 31|43b13 52l8 52t14 123s10
+27r21 u{6R9} 31|43b21 49r20
+30U14*Affectation 30>27 30<48 31|55b14 64l8 64t19 144s7
+30r27 u{6R9} 31|55b27 59r19 60r21 61r21 62r18
+30r48 e{6R9} 31|55b48 59m7 60m7 61m7 62m7
+33V13*Egalite{boolean} 33>22 33>44 31|67b13 77l8 77t15 84s11 159s10
+33r22 u1{6R9} 31|67b22 71r11 71r41 71r71
+33r44 u2{6R9} 31|67b44 71r23 71r53 71r80
+36V13*IdentityCompare{boolean} 36>30 36>52 31|80b13 90l8 90t23 173s10
+36r30 u1{6R9} 31|80b30 84r19 84r38
+36r52 u2{6R9} 31|80b52 84r22 84r50
+39V13*Comparaison{boolean} 39>26 39>48 31|93b13 103l8 103t19 190s10 199s10
+. 208s10
+39r26 u1{6R9} 31|93b26 97r10
+39r48 u2{6R9} 31|93b48 97r22
+42U14*LevelUp 42=23 31|106b14 115l8 115t15 222s7
+42r23 u{6R9} 31|106b23 110m8 110r19 113r12
+45U14*testage 45>23 31|118b14 129l8 129t15
+45r23 u1{6R9} 31|118b23 123r17
+48U14*testaffectation 48>31 48<49 31|132b14 151l8 151t23
+48r31 u1{6R9} 31|132b31 144r19
+48r49 u2{6R9} 31|132b50 144m23 145r10
+51U14*testegalite 51>27 51>46 31|154b14 165l8 165t19
+51r27 u1{6R9} 31|154b27 159r18
+51r46 u2{6R9} 31|154b46 159r22
+54U14*testcomparaison 54>31 54>50 31|183b14 214l8 214t23
+54r31 u1{6R9} 31|183b31 190r22
+54r50 u2{6R9} 31|183b50 190r26 199r25 208r25
+57U14*testlevel 57=25 31|217b14 232l8 232t17
+57r25 u1{6R9} 31|217b25 222m16 225r10
 X 31 type_usager.adb
-44i7 age{integer} 46m7 47r14
+45i7 age{integer} 49m7 50r14
+134r7 usagerTest{30|6R9} 139m7 140m7 141m7 142m7 145r15
+168U14 testidentity 168b14 168>28 168>47 179l8 179t20
+168r28 u1{30|6R9} 173r26
+168r47 u2{30|6R9} 173r30
+185r7 u{30|6R9} 196m7 199r22 205m7 208r22
 

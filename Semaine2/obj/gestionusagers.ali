@@ -7,9 +7,10 @@ P ZX
 
 RN
 RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U gestionusagers%b	gestionusagers.adb	b5267a9d NE OO SU
+U gestionusagers%b	gestionusagers.adb	cef56107 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -28,7 +29,7 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D gestionusagers.adb	20211026160256 03c9ebed gestionusagers%b
+D gestionusagers.adb	20211103151928 30e0755d gestionusagers%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -46,45 +47,50 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D type_usager.ads	20211026154930 ee50cdb9 type_usager%s
+D type_usager.ads	20211103150416 a6aa4893 type_usager%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [gestionusagers standard 5 11 none]
-G r c none [gestionusagers standard 5 11 none] [getusager type_usager 17 14 none]
-G r c none [gestionusagers standard 5 11 none] [putusager type_usager 20 14 none]
-G r c none [gestionusagers standard 5 11 none] [getage type_usager 23 13 none]
-G r c none [gestionusagers standard 5 11 none] [affectation type_usager 26 14 none]
-G r c none [gestionusagers standard 5 11 none] [egalite type_usager 29 13 none]
-G r c none [gestionusagers standard 5 11 none] [identitycompare type_usager 32 13 none]
-G r c none [gestionusagers standard 5 11 none] [comparaison type_usager 35 13 none]
-G r c none [gestionusagers standard 5 11 none] [levelup type_usager 38 14 none]
+G c Z b b [gestionusagers standard 6 11 none]
+G r c none [gestionusagers standard 6 11 none] [getusager type_usager 21 14 none]
+G r c none [gestionusagers standard 6 11 none] [putusager type_usager 24 14 none]
+G r c none [gestionusagers standard 6 11 none] [testage type_usager 45 14 none]
+G r c none [gestionusagers standard 6 11 none] [testaffectation type_usager 48 14 none]
+G r c none [gestionusagers standard 6 11 none] [testegalite type_usager 51 14 none]
+G r c none [gestionusagers standard 6 11 none] [testcomparaison type_usager 54 14 none]
+G r c none [gestionusagers standard 6 11 none] [testlevel type_usager 57 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 13|2r6 2r23 3r6 3r31
+16K9*Ada 20e8 13|3r6 3r23 4r6 4r31
 X 3 a-inteio.ads
-18K13*Integer_Text_IO[11|46] 13|3w10 3r35
+18K13*Integer_Text_IO[11|46] 13|4w10 4r35
 X 10 a-textio.ads
-58K13*Text_IO 725e16 13|2w10 2r27
-262U14*New_Line 13|14s4 27s4 41s4 49s4 58s4 85s4
-506U14*Put_Line 13|21s7 23s7 35s7 37s7 43s9 45s7 51s7 53s7 60s7 62s7 68s7
-. 70s7 77s7 79s7 87s7 89s7
+58K13*Text_IO 725e16 13|3w10 3r27
+65P9*File_Type 13|7r13
+97U14*Create 13|26s4
+100a7 Name{string} 13|26r21
+127U14*Close 13|35s4
+256U14*New_Line 13|28s4 30s4 32s4 34s4
+262U14*New_Line 13|12s4
+457U14*Put 13|27s4 29s4 29s28 31s4 33s4
+X 11 a-tiinio.ads
+68U14*Put 13|27s36[3|18] 31s43[3|18] 33s31[3|18]
 X 13 gestionusagers.adb
-5U11*Gestionusagers 5b11 93l5 93t19
+6U11*Gestionusagers 6b11 37l5 37t19
+7p4 fichier{10|65P9} 26m12 26r12 27r8 27r40 28r13 29r8 29r32 30r13 31r8 31r47
+. 32r13 33r8 33r35 34r13 35m10 35r10
 X 31 type_usager.ads
-2K9*Type_Usager 13|1w6 1r23 31|40e16
-6i7*Num_ID{integer} 13|15m12 28m15 65m12 73m12
-7a7*Username{string} 13|16m12 29m15
-8i7*BornYear{integer} 13|17m12 30m15
-9i7*Level{integer} 13|18m12 31m15 86r15
-12r4*usager1{5R9} 13|10m14 11r14 15m4 16m4 17m4 18m4 20r14 33r16 42r15 50r23
-. 59r19 65m4 67r19 73m4 76r19 84m13 84r13 86r7
-13r4*usager2{5R9} 13|33m25 34r7 42r24 50r32 59r28 67r28 76r28
-14r4*usagertest{5R9} 13|28m4 29m4 30m4 31m4 34r17
-17U14*getUsager 13|10s4
-20U14*putUsager 13|11s4
-23V13*getAge{integer} 13|20s7
-26U14*Affectation 13|33s4
-29V13*Egalite{boolean} 13|42s7
-32V13*IdentityCompare{boolean} 13|50s7
-35V13*Comparaison{boolean} 13|59s7 67s7 76s7
-38U14*LevelUp 13|84s4
+3K9*Type_Usager 13|2w6 2r23 31|59e16
+8i7*Num_ID{integer} 13|14m12 27r56
+9a7*Username{string} 13|15m12 29r48
+10i7*BornYear{integer} 13|16m12 31r63
+11i7*Level{integer} 13|17m12 33r51
+15r4*usager{6R9} 13|10m14 11r14 27r49 29r41 31r56 33r44
+16r4*usager1{6R9} 13|14m4 15m4 16m4 17m4 19r12 20r20 21r16 22r20 23m14 23r14
+17r4*usager2{6R9} 13|20m28 21r24 22r28
+21U14*getUsager 13|10s4
+24U14*putUsager 13|11s4
+45U14*testage 13|19s4
+48U14*testaffectation 13|20s4
+51U14*testegalite 13|21s4
+54U14*testcomparaison 13|22s4
+57U14*testlevel 13|23s4
 

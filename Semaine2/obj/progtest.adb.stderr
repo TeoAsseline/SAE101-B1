@@ -1,0 +1,18 @@
+progtest.adb:17:17: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:17:17: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:36:19: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:36:19: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:51:18: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:51:18: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:65:26: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:65:26: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:80:22: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:80:22: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:86:07: error: assignment to "in" mode parameter not allowed
+progtest.adb:89:22: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:89:22: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:95:07: error: assignment to "in" mode parameter not allowed
+progtest.adb:98:22: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:98:22: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
+progtest.adb:112:16: error: expected type "Type_Usager.Type_Usager" defined at type_usager.ads:5
+progtest.adb:112:16: error: found type "progTEST.Type_Usager" defined at progtest.ads:5
