@@ -1,14 +1,1 @@
-*.o
-*.ali
-*.exe
-*.xml
-b__*
-b~*
-*.db*
-*.cgpr
-*.bexch
-*.npp
-*.stderr
-*.stdout
-*.diff
-*.cswi
+/Semaine2/obj/
