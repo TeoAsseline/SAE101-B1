@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /ProjetADA_semaine/semaine2/obj/
 /ProjetADA_semaine/semaine1/GestionNotes/obj/
 /ProjetADA_semaine/semaine1/exercice2/obj/
@@ -18,3 +19,6 @@ b~*
 *.stdout
 *.diff
 *.cswi
+=======
+/Semaine2/obj/
+>>>>>>> 5bd8b71cfcd47f4ddd661edd6b4fd601fdaa6f00
