@@ -5,9 +5,17 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 procedure test_usager is
 
-   usager : Type_Usager;
-   age    : Integer;
-   usager2 : Type_Usager;
+   usager : Type_Usager; --usager 1
+   age    : Integer; --age test
+   usager2 : Type_Usager; --usager 2
+
+   tab: Type_App; --enregistrement avec tab et nb element
+   user1: Type_Usager; --user 1
+   user2: Type_Usager; --user 2
+   user3: Type_Usager; --user 3
+   usertest: Type_Usager; --usertest
+   trouve1: Boolean; --testBoolean
+   rang1: Integer; --testrang
 
 begin
    -- Test lecture usager
@@ -91,6 +99,81 @@ begin
       put_line ("Comparaison entre usager1 = usager2 est OK");
    end if;
 
+   user1.numero_adherent:= 12;
+   user1.longueur:= 3;
+   user1.nom(1..3) := "teo";
+   user1.annee_naissance:= 2000;
+
+   user2.numero_adherent:= 13;
+   user2.longueur:= 6;
+   user2.nom(1..6) := "arthur";
+   user2.annee_naissance:= 2010;
+
+   user3.numero_adherent:= 14;
+   user3.longueur:= 4;
+   user3.nom(1..4) := "jean";
+   user3.annee_naissance:= 2012;
+
+   affectation(user1,tab.Tab_User(1));
+   affectation(user2,tab.Tab_User(2));
+   affectation(user3,tab.Tab_User(3));
+   tab.nb_User:=3;
+
+   usertest.numero_adherent:= 15;
+   usertest.longueur:= 3;
+   usertest.nom(1..3) := "teo";
+   usertest.annee_naissance:= 2000;
 
 
+   find(tab,user1,trouve1,rang1);
+   --test find
+   if trouve1=True then
+      put("test find est ok");
+   else
+      put("test find est ko");
+   end if;
+   New_Line;
+
+   addLast(usertest,tab);
+
+   --test addLast
+   if tab.nb_User=4 then
+      put("test addLast est ok");
+   else
+      put("test addLast est ko");
+   end if;
+   New_Line;
+
+   remove(tab,2);
+
+   --test remove
+   if tab.nb_User=3 then
+      put("test remove est ok");
+   else
+      put("test remove est ko");
+   end if;
+   New_Line;
+
+   sort(tab);
+
+   --test sort
+   if tab.Tab_User(1) < tab.Tab_User(2) then
+      put("test sort est ok");
+   else
+      put("test sort est ko");
+   end if;
+   New_Line;
+
+   exception
+   when DEBORDEMENT =>
+      put ("trop de valeurs à lire !") ;
+
+   when SAME_ID =>
+      put ("L'identifiant apparait déjà dans le tableau utilisateur !") ;
+
+   when VIDE =>
+      put ("Le tableau est vide !");
+
+   when TOO_BIG_ID =>
+      put ("L'ID est plus grand que le nombre d'usager ! ");
 end test_usager;
