@@ -1,4 +1,0 @@
-identifiant :         458
-Nom : teo            
-Année de naissance :        2010
-Niveau :          45
